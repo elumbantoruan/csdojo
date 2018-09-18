@@ -26,6 +26,11 @@ func TestNonRepeatingChar(t *testing.T) {
 			args: args{s: "aabb"},
 			want: ' ',
 		},
+		{
+			name: "Test4",
+			args: args{s: "aabbd"},
+			want: 'd',
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
